@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NER</title>
+</head>
+<body>
+<form action="" method="POST">
+{% csrf_token %}
+<table>{{ form }}</table>
+<input type="submit" value="Enter"></input>
+</form>
+{% for each in m %}
+<h3>{{ each }}</h3><br>
+{% endfor %}
+</body>
+</html>
