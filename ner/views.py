@@ -17,6 +17,9 @@ def show(request):
 		if form.is_valid():
 			instance = form.save(commit=False)
 			m = processLanguage(instance.a)
+		print "Tags"
+		print m
+		print " "
 		context = {
 			"form" : form,
 			"m" : m,
